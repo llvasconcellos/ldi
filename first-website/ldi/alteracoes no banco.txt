@@ -1,0 +1,4 @@
+ALTER TABLE `produtos` ADD `ordem` INT NOT NULL DEFAULT 999 ;
+
+ALTER TABLE `produtos` ADD `tipo_imposto` VARCHAR( 20 ) NOT NULL ;
+

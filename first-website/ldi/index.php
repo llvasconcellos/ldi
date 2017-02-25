@@ -1,0 +1,49 @@
+<?
+require("includes/funcoes_layout.php");
+if(retorna_config("offline") == "s") site_offline();
+else{
+	inicio_pagina(); ?>
+	<div style="width:570px; height:460px; margin-top:20px; margin-left:15px; overflow:auto; font-family:Arial, Helvetica, sans-serif;">
+		<? mostra_texto("home"); ?>
+	</div>
+	<? final_pagina(); 
+}
+
+function site_offline(){
+	?>
+	<html>
+	<head>
+	<title>LDI - Produtos para automa&ccedil;&atilde;o industrial</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	</head>
+	
+	<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="estrutura/fundo_constr.jpg">
+	<table width="651" border="0" cellspacing="0" cellpadding="0" height="575">
+	  <tr> 
+		<td height="142" width="216">&nbsp;</td>
+		<td height="142" width="266">&nbsp;</td>
+		<td height="142" width="169">&nbsp;</td>
+	  </tr>
+	  <tr> 
+		<td height="67" width="216">&nbsp;</td>
+		<td height="67" width="266" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">O 
+		  nosso web site est&aacute; em constru&ccedil;&atilde;o. Por favor, acesse 
+		  novamente dentro de alguns dias.</font></td>
+		<td height="67" width="169">&nbsp;</td>
+	  </tr>
+	  <tr> 
+		<td valign="bottom"> 
+		  <div align="center"></div>
+		</td>
+		<td colspan="2" valign="bottom" align="center"><font size="1" face="Arial, Helvetica, sans-serif">LDI 
+		  com&eacute;rcio de produtos eletr&ocirc;nicos LTDA. <br>
+		  Rua Guia lopes 538 CEP: 89218-060 Santo Ant&ocirc;nio - Joinville - SC<br>
+		  fone: (47) 435 6804/ 3026 6500 fax: (47) 3026 3743 <br>
+		  ldi@ldi.com.br</font></td>
+	  </tr>
+	</table>
+	</body>
+	</html>
+	<?
+}
+?>
